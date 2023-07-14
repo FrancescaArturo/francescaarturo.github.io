@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Streghe e malefiche</title>
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- DC standard -->
+	<meta name="DC.Title" content="Streghe e malefiche">
+	<meta name="DC.Creator" content="Arturo, Francesca">
+	<meta name="DC.Subject" content="Stregoneria">
+	<meta name="DC.Subject" content="collezione digitale">
+	<meta name="DC.Subject" content="XML/DC">
+	<meta name="DC.Description" content="Il progetto raccoglie i riferimenti alla stregoneria e alle streghe nell'arte, nella letteratura e nei manoscritti">
+	<meta name="DC.Publisher" content="Università di Bologna">
+	<meta name="DC.Contributor" content="Francesca Arturo">
+	<meta name="DC.Date" content="2023-07-17">
+	<meta name="DC.Type" content="Collection">
+	<meta name="DC.Format" content="HTML/CSS/JS">
+	<meta name="DC.Language" content="it">
+	<!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+   // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Arte', 50],
+          ['Letteratura', 25],
+          ['Manoscritti', 25],
+        ]);
+
+        // Set chart options
+        var options = {'title':'Quantità opere nel sito'};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+	<!--header-->
+	<div class="hero-image">
+		<div class="hero-text">
+		<h1>STREGHE E MALEFICHE</h1>
+		<h2>Arte | Letteratura | Manoscritti</h2>
+		<img src="img/logo.jpg">
+		</div>
+	</div>
+	<!--navbar-->
+	<div class="navbar">
+		<a href="index.html" title="Link all'homepage">Home</a>
+		<a href="#" title="Link al progetto">Progetto</a>
+			<div class="dropdown active">
+    		<button class="dropbtn">Catalogo
+    			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      		<a href="list-items2.html" title="Streghe nell'arte">Arte</a>
+      		<a href="#" title="Streghe in letteratura">Letteratura</a>
+      		<a href="#" title="Streghe nei media">Manoscritti</a>
+      		<a href="list-items.html" title="Link al catalogo" class="mostratutto">Mostra tutto</a>
+    		</div>
+  		</div>
+		<input type="text" placeholder="Cerca nel sito...">
+	</div>
+	<!-- Catalogo -->
+	<div class="grid row">
+		<!-- catalogo a sinistra-->
+		<div class="colonna sinistra">
+			<div>
+				<ul class="breadcrumb">
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="list-items.html">Catalogo</a></li>
+  				<li>Arte</li>
+			</ul>
+			</div>
+			<div class="riordina-il-catalogo">
+				<p>RIORDINA IL CATALOGO</p>
+				<a href="#" class="btn default" title="Ordine cronologico">Ordine cronologico</a>
+          		<a href="#" class="btn default" title="Ordine alfabetico">Ordine alfabetico</a>
+          		<a href="#" class="btn default" title="Per tipologia di file">Per tipologia di file</a>
+			</div>
+			<div class="listdrop">
+				<p>FILTRA LE SEZIONI</p>
+				<div class="listdrop arte">
+  					<button onclick="myFunction()" class="drop">Arte</button>
+  					<div id="myDropdown" class="drop-content">
+    					<input type="text" placeholder="Cerca..." id="myInput" onkeyup="filterFunction()">
+    					<a href="#">Pittura</a>
+    					<a href="#">Scultura</a>
+    					<a href="#">Disegno</a>
+    					<a href="#">Grafica</a>
+    					<a href="#">Incisione</a>
+    					<a href="#">Altro</a>
+					</div>
+				</div>
+				<div class="listdrop letteratura">
+  					<button class="drop">Letteratura</button>
+				</div>
+				<div class="listdrop manoscritti">
+  					<button class="drop">Manoscritti</button>
+				</div>
+				<hr>
+				<div class="listdrop secoli">
+  					<button class="drop">Secoli</button>
+				</div>
+				<div class="listdrop luoghi">
+  					<button class="drop">Luoghi</button>
+				</div>
+			</div>
+			<hr>
+			<div id="chart_div"></div>
+		</div>
+		<!-- catalogo a destra -->
+		<div class="colonna destra">
+			<div class="ricerca">
+				<a class="bottone" href="list-items2.html">Arte</a>
+				<a class="bottone" href="#">Letteratura</a>
+				<a class="bottone" href="#">Manoscritti</a>
+				<div class="vl"></div>
+				<a class="bottone" href="#">Secoli</a>
+				<a class="bottone" href="#">Luoghi</a>
+			</div>
+			<form class="example" action="action_page.php">
+  				<input type="text" placeholder="Cerca nella sezione..." name="Cerca">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			<!-- GALLERIA -->
+			<div class="clearfix">
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="item.html">
+				      <img src="img/goya.jpg" alt="Il grande caprone - Francisco Goya">
+				    </a>
+				    <div class="desc">
+				    	<h3>Il grande caprone</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/54343141/#Goya,_Francisco_de,_1746-1828">Goya, Francisco.</a></p>
+				    	<p>Data: <a href="#">1797-1798.</a></p>
+				    	<p>Istituzione fornitrice: <a target="_blank" href="https://it.wikipedia.org/wiki/Museo_L%C3%A1zaro_Galdiano">Museo Lázaro Galdiano, Madrid.</a></p>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="#">
+				      <img src="img/circe.jpg" alt="Circe offre la coppa ad Ulisse - John William Waterhouse">
+				    </a>
+				    <div class="desc">
+				    	<h3>Circe offre la coppa ad Ulisse</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/8187046/">Waterhouse, John William</a></p>
+				    	<p>Data: <a href="#">1891.</a></p>
+				    	<p>Istituzione fornitrice: <a target="_blank" href="https://en.wikipedia.org/wiki/Gallery_Oldham">Gallery Oldham, Oldham.</a></p>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="#">
+				      <img src="img/magiccircle.jpg" alt="Il cerchio magico - John William Waterhouse">
+				    </a>
+				    <div class="desc">
+				    	<h3>Il cerchio magico</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/8187046/">Waterhouse, John William.</a></p>
+				    	<p>Data: <a href="#">1886.</a></p>
+				    	<p>Istituzione fornitrice: <a target="_blank" href="https://it.wikipedia.org/wiki/Tate_Britain">Tate Britain, Londra.</a></p>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="#">
+				      <img src="img/sabbath.jpg" alt="Le streghe si recano al sabba - Luis Ricardo Falero">
+				    </a>
+				    <div class="desc">
+				    	<h3>Le streghe si recano al sabba</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/27339235/#Luis_Ricardo_Falero_pintor_espa%C3%B1ol">Falero, Luis Ricardo.</a></p>
+				    	<p>Data: <a href="#">1878.</a></p>
+				    	<p>Istituzione fornitrice: <span class="bold">Collezione privata.</span></p>
+				    </div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="#">
+				      <img src="img/durer.jpg" alt="La strega - Albrecht Dürer">
+				    </a>
+				    <div class="desc">
+				    	<h3>La strega</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/54146999/#D%C3%BCrer,_Albrecht,_1471-1528.">Dürer, Albrecht.</a></p>
+				    	<p>Data: <a href="#">1500-1501.</a></p>
+				    	<p>Istituzione fornitrice: <a target="_blank" href="https://it.wikipedia.org/wiki/National_Gallery_of_Art">National Gallery of Art, Washington DC.</a></p>
+				    </div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="#">
+				      <img src="img/witchflight.jpg" alt="Il volo delle streghe - Francisco de Goya">
+				    </a>
+				    <div class="desc">
+				    	<h3>Il volo delle streghe</h3>
+				    	<p>Creatore: <a target="_blank" href="https://viaf.org/viaf/54343141/#Goya,_Francisco_de,_1746-1828">Goya, Francisco.</a></p>
+				    	<p>Data: <a href="#">1797.</a></p>
+				    	<p>Istituzione fornitrice: <a target="_blank" href="https://it.wikipedia.org/wiki/Museo_del_Prado">Museo del Prado, Madrid.</a></p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<!-- fine galleria -->
+			<div class="pagination">
+	  			<a href="#">&laquo; Pagina precedente</a>
+	  			<a href="#" class="active">1</a>
+	  			<a href="#">2</a>
+	  			<a href="#">3</a>
+	  			<a href="#">4</a>
+	  			<a href="#">5</a>
+	  			<a href="#">6</a>
+	  			<a href="#">...</a>
+	  			<a href="#">Pagina successiva &raquo;</a>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer">
+      <div class="container">
+          <div class="col- column">
+            <h6>STREGHE E MALEFICHE</h6>
+            <p class="text-justify">Immagine: <span class="bold">Raimondi Marcantonio, Agostino Veneziano
+            <br>
+            Lo Stregozzo, 1520, Scottish National Gallery
+            <br>
+            of Modern Art (Modern One), Edimburgo.</span></p>
+          </div>
+          <div class="col- column">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Contatti</a></li>
+              <li><a href="#">Crediti</a></li>
+              <li><a href="#">Licenze</a></li>
+            </ul>
+          </div>
+        <hr>
+      </div>
+      <div class="container">
+          <div class="col-">
+            <p class="copyright-text">© Copyright (c) 2023 by Francesca Arturo.</p>
+          </div>
+      </div>
+	</footer>
+
+		
+
+
+
+
+
+
+	
+	<script class="filtralalista">
+		function myFunction() {
+  		document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		function filterFunction() {
+  		var input, filter, ul, li, a, i;
+  		input = document.getElementById("myInput");
+  		filter = input.value.toUpperCase();
+  		div = document.getElementById("myDropdown");
+  		a = div.getElementsByTagName("a");
+  		for (i = 0; i < a.length; i++) {
+    		txtValue = a[i].textContent || a[i].innerText;
+    		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     		 a[i].style.display = "";
+    		} else {
+    		  a[i].style.display = "none";
+    		}
+  		}
+		}
+	</script>
+</body>
+</html>

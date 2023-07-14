@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" xml:id="ARTE">
+	<autore xml:id="ARTE-09">
+		<opera xml:id="ARTE-09-01">
+			<dc:title>El aquelarre</dc:title>
+			<dcterms:alternative>Il grande caprone</dcterms:alternative>
+			<dc:creator>Goya, Francisco</dc:creator>
+			<dc:date>1797-1798</dc:date>
+			<dc:subject>Settecento</dc:subject>
+			<dc:subject>Pittura</dc:subject>
+			<dc:subject>Goya</dc:subject>
+			<dc:subject>Arte</dc:subject>
+			<dc:subject>Spagna</dc:subject>
+			<dc:description>Dipinto a olio raffigurante il sabba delle streghe realizzato da Francisco Goya tra il 1797 e il 1798. Misura 44cm x 31cm ed è attualmente conservato al Museo Lázaro Galdiano di Madrid.</dc:description>
+			<dc:publisher>Museo Lázaro Galdiano</dc:publisher>
+			<dc:type>oil painting</dc:type>
+			<dc:format>JPG</dc:format>
+			<dc:identifier xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q2736334</dc:identifier>
+			<dc:source>http://catalogo.museolazarogaldiano.es/</dc:source>
+			<dc:rights>Copyright CC Public Domain - CC0</dc:rights>
+		</opera>
+	</autore>
+</catalogo>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Streghe e malefiche</title>
+	<link rel="icon" href="img/favicon.ico">
+	<!-- DC standard -->
+	<meta name="DC.Title" content="Streghe e malefiche">
+	<meta name="DC.Creator" content="Arturo, Francesca">
+	<meta name="DC.Subject" content="Stregoneria">
+	<meta name="DC.Subject" content="collezione digitale">
+	<meta name="DC.Subject" content="XML/DC">
+	<meta name="DC.Description" content="Il progetto raccoglie i riferimenti alla stregoneria e alle streghe nell'arte, nella letteratura e nei manoscritti">
+	<meta name="DC.Publisher" content="Università di Bologna">
+	<meta name="DC.Contributor" content="Francesca Arturo">
+	<meta name="DC.Date" content="2023-07-17">
+	<meta name="DC.Type" content="Collection">
+	<meta name="DC.Format" content="HTML/CSS/JS">
+	<meta name="DC.Language" content="it">
+	<link rel="DC.Identifier" href="NOME DEL SITO WEB.GITHUB.IO">
+</head>
+<body>
+	<!--header-->
+	<div class="hero-image">
+		<div class="hero-text">
+		<h1>STREGHE E MALEFICHE</h1>
+		<h2>Arte | Letteratura | Manoscritti</h2>
+		<img src="img/logo.jpg">
+		</div>
+	</div>
+	<!--navbar-->
+	<div class="navbar">
+		<a href="#" class="active" title="Link all'homepage">Home</a>
+		<a href="#" title="Link al progetto">Progetto</a>
+			<div class="dropdown">
+    		<button class="dropbtn">Catalogo
+    			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      		<a href="#" title="Streghe nell'arte">Arte</a>
+      		<a href="#" title="Streghe in letteratura">Letteratura</a>
+      		<a href="#" title="Streghe nei media">Manoscritti</a>
+      		<a href="list-items.html" title="Link al catalogo" class="mostratutto">Mostra tutto</a>
+    		</div>
+  		</div>
+		<input type="text" placeholder="Cerca nel sito...">
+	</div>
+	<div class="contenitore">
+		<div class="row testo-sinistra">
+			<h3><span class="titolo">Le streghe e le malefiche</span></h3>
+			<p>
+				La strega, storicamente chiamata lamia o malefica, è una figura mitica che sin dai tempi antichi ha infestato le visioni e gli immaginari della popolazione mondiale, restando vincolata a una realtà folclorica che si è perpetrata fino ai giorni nostri. Fenomeno culturalmente e antropologicamente rilevante, la stregoneria resta ancora oggi materia di studio e approfondimento, utile a comprendere alcune sfaccettature dell'esperienza umana.
+			</p>
+			<a href="#il-progetto" class="btn default" title="Scopri il progetto">Il progetto</a>
+		</div>
+		<div class="row slideshow">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+    			<div class="numbertext">1 / 3</div>
+    			<a href="list-items2.html" title="Arte"><img src="img/goya.jpg" style="width:100%"></a>
+    			<div class="text">Scopri le opere artistiche</div>
+  			</div>
+
+  			<div class="mySlides fade">
+    			<div class="numbertext">2 / 3</div>
+    			<a href="#" title="Letteratura"><img src="img/arnould.jpg" style="width:100%"></a>
+    			<div class="text">Scopri le opere letterarie</div>
+  			</div>
+
+  			<div class="mySlides fade">
+    			<div class="numbertext">3 / 3</div>
+    			<a href="#" title="Manoscritti"><img src="img/lemonde.jpg" style="width:100%"></a>
+   				<div class="text">Scopri i manoscritti</div>
+   			</div>
+			</div>
+			<div class="citazione">
+				<p><span class="bold">"Haeresis est maxima opera maleficarum non credere."</span> - H. Kramer [Institoris], J. Sprenger, <span class="bold">Malleus Maleficarum. Il martello delle streghe</span>, Jouvence, Milano 2020.</p>
+			</div>
+		</div>
+	</div>
+
+		<!--Progetto nel dettaglio-->
+		<div class="row progetto" id="il-progetto"> 
+			<h3><span class="titolo">Il progetto</span></h3>
+			<p>
+				<span class="bold">Streghe e malefiche</span> è un progetto del Digital Humanities Advanced Research Center (<a href="https://centri.unibo.it/dharc/en" title="Link al Centro di ricerca DH.ARC"target="_blank">/DH.ARC</a>) dell'Università di Bologna. Gli obiettivi principali del catalogo sono la raccolta, metadatazione, preservazione e valorizzazione di tutti gli oggetti digitali relativi alla stregoneria e alle streghe, dai tempi antichi fino ai giorni nostri. Il catalogo include documenti storici, opere artistiche e letterarie suddivise per generi, per luoghi e per secoli.
+			</p>
+		</div>
+		<!--Esplora il catalogo arte, letteratura, media -> vedere come fare una cosa originale-->
+		<div class="row">
+			<p><span class="bg titolo">Esplora il catalogo</span></p>
+		</div>
+			<!-- effetto vertical tabs -->
+		<div class="row vertical-tabs">
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'Arte')">Arte</button>
+				<button class="tablinks" onclick="openCity(event, 'Letteratura')">Letteratura</button>
+				<button class="tablinks" onclick="openCity(event, 'Media')">Manoscritti</button>
+			</div>
+			<div id="Arte" class="tabcontent">
+  			<h3>Arte</h3>
+  			<p>Esplora le opere d'arte ispirate alla stregoneria attraverso un percorso cronologico suddiviso in secoli, dall'età antica al Medioevo e Rinascimento, dall'età moderna all'epoca contemporanea.</p>
+  			<a href="list-items2.html" class="btn2 default" title="Vai al catalogo">Vai alla sezione Arte</a>
+			</div>
+			<div id="Letteratura" class="tabcontent">
+  			<h3>Letteratura</h3>
+  			<p>Esplora le opere letterarie dedicate alle streghe scegliendo fra saggi e studi critici sul tema, romanzi di finzione, documenti storici, opere teatrali e molto altro.</p>
+  			<a href="#" class="btn2 default" title="Vai al catalogo">Vai alla sezione Letteratura</a>
+			</div>
+			<div id="Media" class="tabcontent">
+  			<h3>Media</h3>
+  			<p>Esplora i manoscritti dei processi per stregoneria in Italia e nel mondo, con la possibilità di accedere a documenti storici digitalizzati.</p>
+  			<a href="#" class="btn2 default" title="Vai al catalogo">Vai alla sezione Manoscritti</a>
+			</div>
+		</div>
+	<!-- footer -->
+	<footer class="row site-footer">
+      <div class="container">
+          <div class="col- column">
+            <h6>STREGHE E MALEFICHE</h6>
+            <p class="text-justify">Immagine: <span class="bold">Raimondi Marcantonio, Agostino Veneziano
+            <br>
+            Lo Stregozzo, 1520, Scottish National Gallery
+            <br>
+            of Modern Art (Modern One), Edimburgo.</span></p>
+          </div>
+          <div class="col- column">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Contatti</a></li>
+              <li><a href="#">Crediti</a></li>
+              <li><a href="#">Licenze</a></li>
+            </ul>
+          </div>
+        <hr>
+      </div>
+      <div class="container">
+          <div class="col-">
+            <p class="copyright-text">© Copyright (c) 2023 by Francesca Arturo.</p>
+          </div>
+      </div>
+	</footer>
+  <!-- script slideshow -->
+  <script class="slideshow">
+		let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	</script>
+	<script>
+			function openCity(evt, cityName) {
+  		var e, tabcontent, tablinks;
+
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (e = 0; e < tabcontent.length; e++) {
+    		tabcontent[e].style.display = "none";
+  		}
+
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (e = 0; e < tablinks.length; e++) {
+    		tablinks[e].className = tablinks[e].className.replace(" active", "");
+  		}
+
+  	document.getElementById(cityName).style.display = "block";
+  	evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
