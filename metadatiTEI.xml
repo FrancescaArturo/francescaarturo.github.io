@@ -1,0 +1,20 @@
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Il grande caprone</title>
+   </titleStmt>
+   <publicationStmt>
+    <p>Realizzato nel 1798 da Francisco Goya.</p>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Museo Lazaro Galdiano, Madrid.</p>
+   </sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>Dipinto a olio raffigurante il sabba delle streghe realizzato da Francisco Goya tra il 1797 e il 1798. Misura 44cm x 31cm ed è attualmente conservato al Museo Lázaro Galdiano di Madrid.</p>
+  </body>
+ </text>
+</TEI>
