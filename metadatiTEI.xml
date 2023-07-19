@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Il grande caprone</title>
+    <author>Francisco Goya</author>
+    <respStmt>
+        <resp>Encoded by</resp>
+        <name>Francesca Arturo</name>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+        <p>Francisco Goya</p>
+    </publisher>
+    <pubPlace>
+        <address>
+            <addrLine>Madrid</addrLine>
+        </address>
+    </pubPlace>
+    <date>1797-1798</date>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Museo Lazaro Galdiano, Madrid.</p>
+   </sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text xml:lang="it">
+  <body>
+   <p>Dipinto a olio raffigurante il sabba delle streghe realizzato da <name role="painter" type="person">Francisco Goya</name> tra il <date when="1797-1798">1797 e il 1798</date>. Misura 44cm x 31cm ed è attualmente conservato al <placeName>Museo Lázaro Galdiano di Madrid</placeName>.</p>
+  </body>
+ </text>
+</TEI>
